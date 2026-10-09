@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>veerendar's web page</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+       <style>
+           body {
+              margin: 0;
+              font-family: Arial;
+              border: border-box;
+           }
+           .parallax, .parallax1 {
+               background-image: url("V1img.jpg");
+               height: 400px;
+               background-size: cover;
+           }
+           .page-title {
+            background: greenyellow;
+           text-align: center;
+            color: deeppink;
+            padding: 6px;
+            padding-top: 100px;
+            font-variant: normal;
+            font-size: 40px;
+            font-family: Arial;
+            letter-spacing: 0.5rem;
+           }
+           #sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+           }
+           .menu {
+             background: burlywood;
+             text-align: center;
+           }
+           .menu-ul {
+            margin: 0;
+            padding: 0;
+            display: inline;
+           }
+           .menu-ul li {
+            font-size: 17px;
+            list-style: none;
+            display: inline-block;
+            padding: 25px 26px 25px;
+           }
+           .a-menu, .a-links {
+            text-decoration: none;
+            color: white;
+           }
+           .menu-ul li:hover {
+            background: #5b8c5a;
+            transform: scale(0.8);
+           }
+           .search-box {
+            border: 1px solid white;
+            background: white;
+            border-radius: 15px;
+            width: max-content;
+            display: inline-block;
+            margin: 8px;
+            padding-left: 10px;
+            padding-bottom: 5px;
+           }
+           .search-box:hover {
+             box-shadow: 0 0 10px 2px #5b8c5a;
+             border: 1px solid #5b8c5a;
+           }
+           .search-input {
+            width: 250px;
+            border: none;
+            font-size: 16px;
+            background: transparent;
+            margin: 15px 0 0 10px;
+           }
+           i {
+            font-size: 20px;
+            margin:0;
+           }
+           button {
+            background: transparent;
+            border: none;
+            outline: none;
+            padding-top: 5px;
+           }
+           .container, .deals-container{
+            margin: 50px 50px 50px 5%;
+            width: 90%;
+            text-align: center;
+           }
+           .categories, .items {
+            width: max-content;
+            margin: 10px;
+            border: 1px solid #184d47;
+            border-radius: 0 0 50px 50px;
+            display: inline-block;
+           } 
+           .categories:hover, items:hover {
+            box-shadow: 0 0 10px 0;
+           }
+           .item-image {
+            height: 200px;
+            width: 200px;
+            border-radius: 0 0 50px 50px;
+            padding: 10px;
+           }
+           image-title {
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+           }
+           a {
+             text-decoration: none;
+           }
+           .title {
+            padding: 50px;
+            font-size: 50px;
+            font-weight: bold;
+            letter-spacing: 10px;
+            color: yellow;
+            text-decoration: underline 2px blue;
+            background-color: pink;
+           }
+           .deal {
+            padding: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            display: inline-block;
+            margin:10px;
+            background: linear-gradient(120deg,#16817a 20%, #cee397 50%, #16817a 80%);
+           }
+           coupon-btn {
+            border: 1px solid white;
+            color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 30px;
+           }
+           .coupon-btn:hover {
+            box-shadow:0 0 10px 5px white inset;
+           }
+           .images {
+            display: inline-block;
+           }
+           .item-image-size {
+            height: 200px;
+            width: 300px;
+            padding: 5px;
+           }
+           .description {
+            margin: 20px;
+            min-height: 100px;
+           }
+           .item-select {
+            margin: 10px 0 0 0;
+           }
+           .buynow-btn {
+            border: 1px solid #184d47;
+            background: #184d47;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: white;
+           }
+           .buynow-btn:hover {
+            border: 1px solid #5b8c5a;
+            box-shadow: 0 0 10px 5px #5b8c5a inset;
+           }
+           .parallax1 {
+            background:url("footerveg.jpg");
+           }
+           .footer {
+            text-align: center;
+            padding: 20px;
+           }
+           .quick-links {
+             color: white;
+             font-size: 20px;
+             font-weight: bold;
+             display: inline-block;
+             min-width: 30%;
+           }
+           .quick-links ul {
+            padding: 0;
+           }
+           .quick-links li {
+            list-style: none;
+            padding: 10px;
+            font-weight: 300;
+           }
+           .a-links:hover {
+            color: #fd5e53;
+           }
+           .copyrights {
+            font-size: 16px;
+            font-family:Arial, Helvetica, sans-serif ;
+            text-align: center;
+            margin:20px;
+           }
+        </style>
+    </head>
+    <body>
+          <div class="parallax">
+            <div class="page-title">VEERENDAR'S ORGANIC FRUITS & VEGETABLES</div>
+          </div>
+          <div class="menu" id="sticky">
+              <ul class="menu-ul">
+                 <a href="#" class="a-menu"><li>Home</li></a>
+                 <a href="#" class="a-menu"><li>Deals</li></a>
+                 <a href="#" class="a-menu"><li>vegetables</li></a>
+                 <a href="#" class="a-menu"><li>fruits</li></a>
+                 <a href="#" class="a-menu"><li>cart</li></a>
+              </ul>
+              <div class="search-box">
+                <form>
+                    <input type="text" placeholder="search..." name="search">
+                    <button type="submit"><i class='bx bx-search'></i></button>
+                </form>
+              </div>
+          </div>
+          <!--Home page-->
+          <div class="container">
+            <a href="#vegetables">
+              <div class="categories">
+                  <img src="C:\Users\dell\Downloads\veg.jpg" class="item-image">
+                  <div class="image-title">Vegetables</div>
+              </div>
+            </a>
+            <a href="#leafy-vegetables">
+              <div class="categories">
+                  <img src="C:\Users\dell\Downloads\leafyveg.jpg" class="item-image">
+                  <div class="image-title">leafy-Vegetables</div>
+              </div>
+            </a>
+            <a href="#fruits">
+              <div class="categories">
+                  <img src="C:\Users\dell\Downloads\fruits.jpg" class="item-image">
+                  <div class="image-title">Fruits</div>
+              </div>
+            </a>
+            <a href="#Milk">
+              <div class="categories">
+                  <img src="C:\Users\dell\Downloads\milk.jpg" class="item-image">
+                  <div class="image-title">Milk</div>
+              </div>
+            </a>
+            <a href="#Eggs">
+              <div class="categories">
+                  <img src="C:\Users\dell\Downloads\Eggs.jpg" class="item-image">
+                  <div class="image-title">Eggs</div>
+              </div>
+            </a>
+          </div>
+          <!--Deals-->
+          <div class="deals-container">
+            <div class="parallax">
+              <div class="title">DEALS</div>
+            </div>
+            <div class="deal">
+              save 20% on min-purchase of 1000/ on vegetables<br/>
+              <button class="coupon-btn">Add Coupon</button>
+            </div>
+            <div class="deal">
+              save 10% on min-purchase of 500/ on fruits<br/>
+              <button class="coupon-btn">Add Coupon</button>
+            </div>
+            <div class="deal">
+              save 15% on min-purchase of 200/ on Eggss<br/>
+              <button class="coupon-btn">Add Coupon</button>
+            </div>
+          </div>
+          <!--veg begins-->
+          <div class="deals-container" id="vegetables">
+            <div class="parallax">
+            <div class="title">VEGETABLES</div>
+          </div>
+          <div class="items">
+            <div class="images">
+              <img src="C:\Users\dell\Downloads\okra.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+              <b>0rganic okra</b><br/>
+              <div class="item-select">
+                price : 20/500grams
+              </div>
+              <label>Qty:</label>
+              <select class="item-select">
+                <option>250grams</option>
+                <option>500grams</option>
+                <option>750grams</option>
+                <option>1000grams</option>
+              </select><br/>
+              <button class="buynow-btn">Buy Now</button>
+             </div>
+            </div>
+            <div class="items">
+              <div class="images">
+                <img src="C:\Users\dell\Downloads\onion.jpg" class="item-image-size"/>
+              </div>
+              <div class="description">
+                <b>0nions</b><br/>
+                <div class="item-select">
+                  price : 40/500grams
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                  <option>250grams</option>
+                  <option>500grams</option>
+                  <option>750grams</option>
+                  <option>1000grams</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+               </div>
+              </div>
+              <div class="items">
+                <div class="images">
+                  <img src="C:\Users\dell\Downloads\tomato.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                  <b>Tomatoes</b><br/>
+                  <div class="item-select">
+                    price : 30/500grams
+                  </div>
+                  <label>Qty:</label>
+                  <select class="item-select">
+                    <option>250grams</option>
+                    <option>500grams</option>
+                    <option>750grams</option>
+                    <option>1000grams</option>
+                  </select><br/>
+                  <button class="buynow-btn">Buy Now</button>
+                 </div>
+                </div>
+                <div class="items">
+                  <div class="images">
+                    <img src="C:\Users\dell\Downloads\Beans.jpg" class="item-image-size"/>
+                  </div>
+                  <div class="description">
+                    <b>Beans</b><br/>
+                    <div class="item-select">
+                      price : 40/500grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                      <option>250grams</option>
+                      <option>500grams</option>
+                      <option>750grams</option>
+                      <option>1000grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                   </div>
+                  </div>
+          </div>
+                    <!--Fruits begins-->
+                    <div class="deals-container" id="fruits">
+                      <div class="parallax">
+                      <div class="title">FRUITS</div>
+                    </div>
+                    <div class="items">
+                      <div class="images">
+                        <img src="C:\Users\dell\Downloads\apple.jpg" class="item-image-size"/>
+                      </div>
+                      <div class="description">
+                        <b>Apples</b><br/>
+                        <div class="item-select">
+                          price : 100/500grams
+                        </div>
+                        <label>Qty:</label>
+                        <select class="item-select">
+                          <option>250grams</option>
+                          <option>500grams</option>
+                          <option>750grams</option>
+                          <option>1000grams</option>
+                        </select><br/>
+                        <button class="buynow-btn">Buy Now</button>
+                       </div>
+                      </div>
+                      <div class="items">
+                        <div class="images">
+                          <img src="C:\Users\dell\Downloads\kiwi.jpg" class="item-image-size"/>
+                        </div>
+                        <div class="description">
+                          <b>Kiwi</b><br/>
+                          <div class="item-select">
+                            price : 140/500grams
+                          </div>
+                          <label>Qty:</label>
+                          <select class="item-select">
+                            <option>250grams</option>
+                            <option>500grams</option>
+                            <option>750grams</option>
+                            <option>1000grams</option>
+                          </select><br/>
+                          <button class="buynow-btn">Buy Now</button>
+                         </div>
+                        </div>
+                        <div class="items">
+                          <div class="images">
+                            <img src="C:\Users\dell\Downloads\dragonfruit.jpg" class="item-image-size"/>
+                          </div>
+                          <div class="description">
+                            <b>Dragon fruit</b><br/>
+                            <div class="item-select">
+                              price : 100/500grams
+                            </div>
+                            <label>Qty:</label>
+                            <select class="item-select">
+                              <option>250grams</option>
+                              <option>500grams</option>
+                              <option>750grams</option>
+                              <option>1000grams</option>
+                            </select><br/>
+                            <button class="buynow-btn">Buy Now</button>
+                           </div>
+                          </div>
+                          <div class="items">
+                            <div class="images">
+                              <img src="C:\Users\dell\Downloads\mango.jpg" class="item-image-size"/>
+                            </div>
+                            <div class="description">
+                              <b>Mango</b><br/>
+                              <div class="item-select">
+                                price : 50/500grams
+                              </div>
+                              <label>Qty:</label>
+                              <select class="item-select">
+                                <option>250grams</option>
+                                <option>500grams</option>
+                                <option>750grams</option>
+                                <option>1000grams</option>
+                              </select><br/>
+                              <button class="buynow-btn">Buy Now</button>
+                             </div>
+                            </div>
+                    </div>
+          <!--footer-->
+         <div class="parallax1">
+          <div class="footer">
+            <div class="quick-links">
+            <div>Careers</div>
+            <ul>
+              <li><a href="" class="a-links">Packing Staff</a></li>
+              <li><a href="" class="a-links"></a>Delivery Agents</li>
+              <li><a href="" class="a-links"></a>Shelf Fillers</li>
+            </ul>
+            </div>
+            <div class="quick-links">
+              <div>Quick links</div>
+              <ul>
+                <li><a href="" class="a-links">Contact Us</a></li>
+                <li><a href="" class="a-links">FAQ</a></li>
+                <li><a href="" class="a-links">Help</a></li>
+              </ul>
+              </div>
+          </div>
+         </div> 
+         <div class="copyrights">
+          <i>2020 By programmers web drive</i>
+         </div>
+    </body>
+</html>
